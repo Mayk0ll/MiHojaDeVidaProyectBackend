@@ -1,0 +1,53 @@
+<main>
+    <div class="row text-center align-items-center">
+        <div class="col-12 col-md-6 imgPhotoContainer mb-3">
+            <img src="/images/Perfil.jpg" alt="">
+        </div>
+        <div class="col-5 col-md-3 d-flex flex-column align-items-end title">
+            <h6>Nombre:</h6>
+            <h6>Correo:</h6>
+            <h6>Telefono:</h6>
+            <h6>Ubicacion:</h6>
+            <h6>Fecha de nacimiento: </h6>
+            <h6>GitHub:</h6>
+            <h6>linkedin:</h6>
+
+        </div>
+        <div class="col-7 col-md-3 d-flex flex-column align-items-start">
+            <h6>Michael A. Vasquez Lopera</h6>
+            <h6>michael.vasquez.dev@gmail.com</h6>
+            <h6>+57 350 210 9017</h6>
+            <h6>Medellin / Colombia</h6>
+            <h6>1996-05-19</h6>
+            <h6><a href="https://github.com/Mayk0ll" target="_blank">GitHub... Ir -></a></h6>
+            <h6><a href="https://www.linkedin.com/in/michael-alexis-vasquez-lopera/" target="_blank">Linkedin... Ir-></a></h6>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3 class="title">Perfil Profesional</h3>
+            <p>Soy un desarrollador Fullstack Web con experiencia en el diseño, desarrollo e implementación de aplicaciones web eficientes, escalables y centradas en el usuario. Enfocado en crear soluciones que optimicen la experiencia de usuario, mejorando la funcionalidad y el rendimiento de las plataformas. Capaz de gestionar tanto el frontend como el backend de proyectos, asegurando una integración fluida entre todas las capas de la aplicación. Hábil en la coordinación de proyectos, desde su fase inicial hasta el despliegue y mantenimiento, con un enfoque en la optimización de procesos y la resolución de problemas técnicos complejos. Comprometido con las mejores prácticas de desarrollo y en constante búsqueda de innovación y aprendizaje para mejorar la calidad del producto final.</p>
+            <hr>
+            <h3 class="title">Educacion</h3>
+        </div>
+        <div class="col-12 col-md-6">
+            <h3 class="title">Experiencia</h3>
+            {{#each experiences}}
+                <div class="row cartExperience pb-4">
+                    <div class="col-6"><h5>{{this.company}}</h5></div>
+                    <div class="col-6"><h6>{{this.startDate}} - {{this.endDate}}</h6></div>
+                    <div class="col-12"><h6>{{this.position}}</h6></div>
+                    <div class="col-12"><p>{{this.description}}</p></div>
+                </div> 
+            {{/each}}
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3 class="title">Tecnologias Aprendidas</h3>
+        </div>
+    </div>
+</main>

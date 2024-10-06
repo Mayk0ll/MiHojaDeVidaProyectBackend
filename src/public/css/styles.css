@@ -1,0 +1,35 @@
+:root {
+    --color-primary: #ffde59;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    background-color: #333
+}
+
+a{
+    text-decoration: none;
+    color: rgb(165, 203, 241);
+}
+
+.title{
+    color: var(--color-primary);
+}
+
+.imgPhotoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPhotoContainer img{
+    height: 230px;
+    border-radius: 75px;
+    border: 5px solid var(--color-primary);
+}
