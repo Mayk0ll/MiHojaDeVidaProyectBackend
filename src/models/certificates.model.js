@@ -7,22 +7,14 @@ const Certificate = sequelize.define('certificate', {
         autoIncrement: true,
         primaryKey: true
     },
-    title: {
+    name: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    place: {
+    url: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    description: {
-        type: DataTypes.STRING,
-        allowNull: true
-    },
-    date: {
-        type: DataTypes.DATE,
-        allowNull: false
-    }
 });
 
 export default Certificate;

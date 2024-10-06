@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #ffde59;
+    --color-primary: #FFD700;
 }
 
 *, *::after, *::before {
@@ -9,13 +9,36 @@
 }
 
 body{
-    color: white;
+    color: #CCCCCC;
     background-color: #333
 }
 
 a{
     text-decoration: none;
     color: rgb(165, 203, 241);
+}
+
+.logoContainer{
+    cursor: pointer;
+}
+
+.logo{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+.logoHandleBars{
+    border: 3px solid orange;
+}
+
+.logoReact{
+    border: 3px solid #61dafb;
+}
+
+.logoAngular{
+    border: 3px solid #dd0031;
 }
 
 .title{

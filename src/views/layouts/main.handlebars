@@ -9,7 +9,25 @@
     <link rel="stylesheet" href="\css\styles.css">
 </head>
 <body>
-    <div class="container-fluid pt-5">
+  <header>
+    <nav class="d-flex justify-content-center mt-3">
+      <div class="d-flex flex-column align-items-center m-3 logoContainer">
+        <img src="/images/handlebarsLogo.png" alt="logo handlebars" class="logo logoHandleBars mb-2">
+        <h6>HandleBars</h6>
+      </div>
+      <div class="d-flex flex-column align-items-center m-3 logoContainer">
+        <img src="/images/reactLogo.png" alt="logo handlebars" class="logo logoReact mb-2">
+        <h6>React</h6>
+        <h6>(En proceso)</h6>
+      </div>
+      <div class="d-flex flex-column align-items-center m-3 logoContainer">
+        <img src="/images/angularLogo.png" alt="logo handlebars" class="logo logoAngular mb-2">
+        <h6>Angular</h6>
+        <h6>(En proceso)</h6>
+      </div>
+    </nav>
+  </header>
+    <div class="container-fluid">
       <div class="container">
         {{{body}}}
       </div>
